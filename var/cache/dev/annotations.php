@@ -62,6 +62,12 @@ return [[
 '[C]Symfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%23addLink' => 1,
 'Symfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%24container' => 0,
 '[C]Symfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%24container' => 1,
+'App%5CController%5CHomeController' => 0,
+'[C]App%5CController%5CHomeController' => 1,
+'App%5CController%5CHomeController%23index' => 2,
+'[C]App%5CController%5CHomeController%23index' => 1,
+'App%5CController%5CHomeController%23movies' => 3,
+'[C]App%5CController%5CHomeController%23movies' => 1,
 'Symfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController' => 0,
 '[C]Symfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController' => 1,
 'Symfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController%23__construct' => 0,
@@ -92,6 +98,50 @@ return [[
 ], [
 
 0 => [],
-1 => 1697258182,
+1 => 1697265997,
+2 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+        ],
+        null,
+        [
+            'Symfony\\Component\\Routing\\Annotation\\Route' => [
+                'path' => [
+                    '/home',
+                ],
+                'name' => [
+                    'app_home',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+3 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+        ],
+        null,
+        [
+            'Symfony\\Component\\Routing\\Annotation\\Route' => [
+                'path' => [
+                    '/movie/{title}',
+                ],
+                'name' => [
+                    'movie_title',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
 
 ]];
