@@ -168,7 +168,7 @@ return [[
 ], [
 
 0 => [],
-1 => 1697341882,
+1 => 1697379418,
 2 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
@@ -178,7 +178,7 @@ return [[
         [
             'Symfony\\Component\\Routing\\Annotation\\Route' => [
                 'path' => [
-                    '/home',
+                    '/',
                 ],
                 'name' => [
                     'app_home',
