@@ -67,7 +67,12 @@ class __TwigTemplate_e3b9c3e22f32f8a19765a45d83de0ac108ebe46bcead08d6add50f97fdf
         // line 4
         echo "
 <h1>I am new Symfony </h1>
-    
+
+<div data-controller=\"hello\"></div>
+";
+        // line 8
+        echo $this->extensions['Symfony\WebpackEncoreBundle\Twig\StimulusTwigExtension']->renderStimulusController($this->env, "hello");
+        echo "
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -89,7 +94,7 @@ class __TwigTemplate_e3b9c3e22f32f8a19765a45d83de0ac108ebe46bcead08d6add50f97fdf
 
     public function getDebugInfo()
     {
-        return array (  68 => 4,  58 => 3,  35 => 1,);
+        return array (  74 => 8,  68 => 4,  58 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -99,7 +104,9 @@ class __TwigTemplate_e3b9c3e22f32f8a19765a45d83de0ac108ebe46bcead08d6add50f97fdf
 {% block body %}
 
 <h1>I am new Symfony </h1>
-    
+
+<div data-controller=\"hello\"></div>
+{{ stimulus_controller('hello') }}
 {% endblock %}", "home/index.html.twig", "/Users/mac/Documents/Projects/Symfony/ditty/templates/home/index.html.twig");
     }
 }
